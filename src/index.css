@@ -1,0 +1,42 @@
+@import "tailwindcss";
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-rgb: 249, 250, 251;
+  }
+  
+  .dark {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 17, 24, 39;
+  }
+  
+  html {
+    color: rgb(var(--foreground-rgb));
+    background-color: rgb(var(--background-rgb));
+  }
+  
+  body {
+    min-height: 100vh;
+  }
+  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(156, 163, 175, 0.3) transparent;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 163, 175, 0.3);
+    border-radius: 4px;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(156, 163, 175, 0.5);
+  }
